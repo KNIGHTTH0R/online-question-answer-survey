@@ -1,11 +1,25 @@
 
 <html>
 <title>
+
+
 question answer survey
 </title>
+<style>
+body{
+	background-image:url("https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?h=350&auto=compress&cs=tinysrgb");
+	width:100%;
+}
+
+
+</style>
 <body>
 
 
+ <img src="F:\piczz\desktop wallpapers-wallpaper\say_cheese.jpg" style="width:100%;"> 
+<B><U><I>welcome to awakening webpage!!!!!! <br><br>
+complete this 8 questions inorder to scan yourself with the page<br><br>
+first set::<br><br></b></u></i>
 <?php
 $question1='how much you know yourself?';
 $answer1A='very much' ;
@@ -114,11 +128,6 @@ $result_set =mysqli_query($connection,$query);
 
 
 <?php
-
-
-
-
-
 echo $question1; 
 ?>
 <form method="get" action ="check.php">
@@ -135,15 +144,14 @@ print $answer1B .'<br>';
 <?php
 print $answer1C .'<br>';
 ?>
-<input type='submit' value='submit'>
 
 </form>
 
-
 <?php
-echo $question2; 
+echo $question2 .'<br>' .'<br>'; 
 ?>
-<form method="get" action ="check.php">
+
+<form method="get" action ="qasurvey.php">
  
 <input type='Radio' name='mcq' value='A'>
 <?php
@@ -157,6 +165,144 @@ print $answer2B .'<br>';
 <?php
 print $answer2C .'<br>';
 ?>
+
+
+</form>
+
+
+<?php
+echo $question3 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="qasurvey.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer3A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer3B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer3C .'<br>';
+?>
+
+</form>
+
+
+<?php
+echo $question4 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="qasurvey.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer4A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer4B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer4C .'<br>';
+?>
+
+</form>
+
+
+
+<?php
+echo $question5 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="qasurvey.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer5A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer5B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer5C .'<br>';
+?>
+
+</form>
+
+
+<?php
+echo $question6 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="qasurvey.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer6A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer6B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer6C .'<br>';
+?>
+
+</form>
+
+
+
+<?php
+echo $question7 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="qasurvey.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer7A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer7B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer7C .'<br>';
+?>
+
+</form>
+
+
+
+
+<?php
+echo $question8 .'<br>' .'<br>'; 
+?>
+
+<form method="get" action ="check.php">
+ 
+<input type='Radio' name='mcq' value='A'>
+<?php
+echo $answer8A .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+<?php
+print $answer8B .'<br>';
+?>
+<input type='Radio' name='mcq' value='A'>
+
+<?php
+print $answer8C .'<br>';
+?>
 <input type='submit' value='submit'>
 
 </form>
@@ -164,7 +310,10 @@ print $answer2C .'<br>';
 
 
 
-mysqli_close($connection);
+
+
+
+
 </body>
 </html>
 
